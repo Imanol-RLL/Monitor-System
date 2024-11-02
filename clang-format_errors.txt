@@ -1,0 +1,40 @@
+/home/runner/work/so-i-24-Imanol-RLL/so-i-24-Imanol-RLL/src/expose_metrics.c:102:62: warning: code should be clang-formatted [-Wclang-format-violations]
+    cpu_usage_metric = prom_gauge_new("cpu_usage_percentage","Porcentaje de uso de CPU", 0, NULL);
+                                                             ^
+/home/runner/work/so-i-24-Imanol-RLL/so-i-24-Imanol-RLL/src/expose_metrics.c:108:26: warning: code should be clang-formatted [-Wclang-format-violations]
+    memory_usage_metric = prom_gauge_new("memory_usage_percentage", "Porcentaje de uso de memoria",0,(const char*[]){"label"});
+                         ^
+/home/runner/work/so-i-24-Imanol-RLL/so-i-24-Imanol-RLL/src/expose_metrics.c:108:100: warning: code should be clang-formatted [-Wclang-format-violations]
+    memory_usage_metric = prom_gauge_new("memory_usage_percentage", "Porcentaje de uso de memoria",0,(const char*[]){"label"});
+                                                                                                   ^
+/home/runner/work/so-i-24-Imanol-RLL/so-i-24-Imanol-RLL/src/expose_metrics.c:108:102: warning: code should be clang-formatted [-Wclang-format-violations]
+    memory_usage_metric = prom_gauge_new("memory_usage_percentage", "Porcentaje de uso de memoria",0,(const char*[]){"label"});
+                                                                                                     ^
+/home/runner/work/so-i-24-Imanol-RLL/so-i-24-Imanol-RLL/src/expose_metrics.c:112:24: warning: code should be clang-formatted [-Wclang-format-violations]
+        fprintf(stderr,"Error al crear la métrica de uso de memoria\n");
+/home/runner/work/so-i-24-Imanol-RLL/so-i-24-Imanol-RLL/src/expose_metrics.c:116:70: warning: code should be clang-formatted [-Wclang-format-violations]
+    memory_system_metric = prom_gauge_new("memory_system_percentage","porcentaje de uso de memoria del sistema",0,(const char*[]){"label"});
+                                                                     ^
+/home/runner/work/so-i-24-Imanol-RLL/so-i-24-Imanol-RLL/src/expose_metrics.c:116:113: warning: code should be clang-formatted [-Wclang-format-violations]
+    memory_system_metric = prom_gauge_new("memory_system_percentage","porcentaje de uso de memoria del sistema",0,(const char*[]){"label"});
+                                                                                                                ^
+/home/runner/work/so-i-24-Imanol-RLL/so-i-24-Imanol-RLL/src/expose_metrics.c:116:115: warning: code should be clang-formatted [-Wclang-format-violations]
+    memory_system_metric = prom_gauge_new("memory_system_percentage","porcentaje de uso de memoria del sistema",0,(const char*[]){"label"});
+                                                                                                                  ^
+/home/runner/work/so-i-24-Imanol-RLL/so-i-24-Imanol-RLL/src/expose_metrics.c:126:73: warning: code should be clang-formatted [-Wclang-format-violations]
+        prom_collector_registry_register_metric(memory_system_metric) !=0)
+                                                                        ^
+/home/runner/work/so-i-24-Imanol-RLL/so-i-24-Imanol-RLL/src/main.c:6:1: warning: code should be clang-formatted [-Wclang-format-violations]
+#include "expose_metrics.h"
+^
+/home/runner/work/so-i-24-Imanol-RLL/so-i-24-Imanol-RLL/src/main.c:13:20: warning: code should be clang-formatted [-Wclang-format-violations]
+    fprintf(stderr,"Error: Se recibió la señal SIGSEGV, cerrando el servidor de manera segura.\n");
+/home/runner/work/so-i-24-Imanol-RLL/so-i-24-Imanol-RLL/src/main.c:19:20: warning: code should be clang-formatted [-Wclang-format-violations]
+    signal(SIGSEGV,sigsegv_handler);
+                   ^
+/home/runner/work/so-i-24-Imanol-RLL/so-i-24-Imanol-RLL/include/expose_metrics.h:45:22: warning: code should be clang-formatted [-Wclang-format-violations]
+void destroy_mutex();
+                     ^
+/home/runner/work/so-i-24-Imanol-RLL/so-i-24-Imanol-RLL/include/metrics.h:38:28: warning: code should be clang-formatted [-Wclang-format-violations]
+double get_memory_system();
+                           ^
