@@ -8,5 +8,4 @@ add_executable(so_i_24_Imanol_RLL
         src/expose_metrics.c
         src/main.c
         src/metrics.c)
-target_link_libraries(so_i_24_Imanol_RLL prom)
-target_link_libraries(so_i_24_Imanol_RLL promhttp)
+target_link_libraries(so_i_24_Imanol_RLL PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/lib/libprom.so ${CMAKE_CURRENT_SOURCE_DIR}/lib/libpromhttp.so)
